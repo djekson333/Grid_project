@@ -1,0 +1,19 @@
+.header-navbar{
+  &__btn{
+  display: none;
+}
+  &__list{
+  list-style: none;
+  margin: 0 -20px 0 0 ;
+  padding: 0;
+  display: grid;
+  justify-content: end;
+  grid-template-columns: repeat(auto-fit, minmax(50px,max-content));
+}
+
+  &__link{
+  display: block;
+  padding: 20px;
+  font-size: 1.125rem;
+}
+}

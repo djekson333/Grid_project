@@ -1,0 +1,123 @@
+
+@import"../../normalize.css";
+
+
+
+
+@import "../../libs/normalize-scss/sass/normalize/import-now";
+@import "skin";
+@import "variables";
+@import "mixins";
+@import "mixins-media";
+@import "extends";
+
+@import "common";
+@import "header/header";
+@import "header/header-overlay";
+@import "header/header-menu";
+@import "header/header-logo";
+@import "header/header-navbar";
+@import "header/header-content";
+
+@import "sections/skills/skills";
+@import "sections/skills/skills-item";
+@import "sections/section-about";
+@import "sections/section-form";
+@import "sections/section-posts";
+
+@import "footer";
+
+
+ 
+  
+  
+  //Типографика
+  * {
+    box-sizing: border-box;
+  }
+  
+  html {
+    line-height: 1.15;
+    letter-spacing: 0.1em;
+    color: #637588;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    overflow-y: scroll;
+    display: block;
+  }
+  [hidden] {
+    display: none;
+  }
+  
+  h1 {
+    font-family: "Roboto Slab", serif;
+    font-size: 3.75rem;
+    font-weight: 300;
+    line-height: 1.2em;
+    letter-spacing: 0.08em;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  .btn,
+  .btn-accent{
+    display: block;
+    font-size: 1.125rem;
+    text-align: center;
+    letter-spacing: 0.1em;
+    transition: background-color 0.5s;
+  }
+  .btn{
+    min-width: 250px;
+    padding: 18px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid #ffffff;
+   }
+   .btn-accent{
+    max-width: 350px;
+    padding: 18px 20px;
+    background-color:rgba(45, 54, 81, 0.8);
+    border: 2px solid #ffffff;
+  
+   }
+  
+   .btn-accent:hover {
+    background-color: #d66926;
+  }
+  
+  .btn:hover {
+    background-color:  #d66926;
+  }
+
+
+
+
+
+
+  @media (max-width: 640px) {
+    .skills__container{
+      grid-auto-rows: 200px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    h1{
+      font-size: 2.5rem;
+    }
+    .header-content__title{
+       margin: 0 0 43px 0;
+    }
+  }
+  @media (max-width: 768px) {
+    h1{
+      font-size: 1.875rem;
+    }
+    .header-content__title{
+      margin: 0 0 33px 0;
+   }
+  }
+
+

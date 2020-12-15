@@ -1,0 +1,18 @@
+
+.skills{
+  padding: 10px;
+
+  &__container{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:"a1 a1 a2 a3""a4 a5 a5 a6""a7 a8 a9 a6";
+  grid-auto-rows: calc(33.333vh - 13.333px);
+  margin-bottom: 10px;
+}
+  &__button {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+  }
+}
+

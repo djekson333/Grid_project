@@ -1,0 +1,60 @@
+.skills-item {
+  background-color: #2d3651;
+  position: relative;
+  overflow: hidden;
+}
+  &:hover {
+    .skills-item__overlay {
+      opacity: 0.95 !important;
+    }
+
+    .skills-item__image {
+      transform: scale(1.1);
+    }
+
+    .skills-item__link {
+      color: #d66926;
+    }
+  }
+     &__overlay {
+      z-index: 1;
+      @include abs-position;
+      background-color: #2d3651;
+      opacity: 0.8;
+      transition: opacity 0.5s;
+    }
+
+      &__image {
+      @include abs-position;
+      transition: transform 0.5s;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+      &__title {
+      z-index: 2;
+      @include abs-position;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.25rem;
+      letter-spacing: 0.1em;
+    }
+
+      &__link {
+      padding: 20px;
+      @include abs-position;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: color 0.5s;
+    }
+
+
+   @for $i from 1 through 9 {
+     .skills-item:nth-of-type(#{$i}) {
+       grid-area: a#{$i};
+     }
+   }
+
