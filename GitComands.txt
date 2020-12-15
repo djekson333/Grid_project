@@ -1,0 +1,12 @@
+1.git init
+2.git status
+3.git add .
+4.git commit
+5.git restore
+6.git rm
+7.git log
+8.git checkout
+9.git branchgit
+10. git remote
+11.git push
+12.git pull
