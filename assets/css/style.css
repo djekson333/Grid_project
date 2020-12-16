@@ -2,7 +2,9 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-
+ body{
+   margin: 0;
+ }
 html {
   line-height: 1.15;
   letter-spacing: 0.1em;
@@ -49,7 +51,7 @@ a {
 }
 
 .btn-accent {
-  max-width: 350px;
+  min-width: 350px;
   padding: 18px 20px;
   background-color: rgba(45, 54, 81, 0.8);
   border: 2px solid #ffffff;
@@ -348,6 +350,6 @@ a {
 
 @media (max-width: 640px) {
   .skills__container {
-    grid-auto-rows: 200px;
+    grid-auto-rows: 217px;
   }
 }
