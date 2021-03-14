@@ -1,5 +1,5 @@
 .skills-item {
-  background-color: #2d3651;
+  background-color: $color-primary;
   position: relative;
   overflow: hidden;
 }
@@ -13,13 +13,13 @@
     }
 
     .skills-item__link {
-      color: #d66926;
+      color: $color-accent;
     }
   }
      &__overlay {
       z-index: 1;
       @include abs-position;
-      background-color: #2d3651;
+      background-color: $color-primary;
       opacity: 0.8;
       transition: opacity 0.5s;
     }
@@ -43,7 +43,7 @@
     }
 
       &__link {
-      padding: 20px;
+      padding: $gap;
       @include abs-position;
       display: flex;
       justify-content: center;

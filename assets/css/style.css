@@ -55,6 +55,7 @@ a {
   padding: 18px 20px;
   background-color: rgba(45, 54, 81, 0.8);
   border: 2px solid #ffffff;
+ 
 }
 
 .btn-accent:hover {
@@ -189,7 +190,7 @@ a {
   display: grid;
   grid-gap: 10px;
   grid-template-areas: "a1 a1 a2 a3" "a4 a5 a5 a6" "a7 a8 a9 a6";
-  grid-auto-rows: calc(33.333vh - 13.333px);
+  grid-auto-rows: calc(230px - 20px * 0.66666);
   margin-bottom: 10px;
 }
 
